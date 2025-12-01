@@ -1,0 +1,229 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+User reviews-Joker 
+
+While the trailers for this movie have may seemed like there was potential for an 
+action packed movie, this movie, clearly before it came to theaters was intended 
+to be a progressive character study. You shouldn&#x27;t go into this movie expecting 
+intense action or the joker we know of the past. This is a movie about how Arthur 
+Fleck becomes the Joker. 
+
+I have seen so many bad reviews about how boring or slow the movie is, but I 
+believe it was <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">utter perfection</span>. The first part of the movie we begin to understand 
+Arthur as a person. All of his interactions with everyone in his life, be it good or 
+bad. The whole point of a character study is evolution. And this is far and away 
+<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">one of the greatest evolutions of a character I have ever seen in a movie</span>. 
+
+Joaquin Phoenix&#x27;s performance is <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">by far the best acting I have seen in a movie 
+possibly in the last few decades</span>. We see a challenged person be challenged by 
+society and it completely breaks him down over time. And Joaquin isn&#x27;t acting, he 
+is evolving all throughout the movie. If anyone thinks he doesn&#x27;t put on <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">an Oscar 
+winning performance</span>, they&#x27;re out of their effing mind. Yes, the movie is slow to 
+start, but it has to be. We couldn&#x27;t just jump into the joker and all the chaos. We 
+need to know where it came from to begin with. 
+
+The whole compilation of the movie is <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">amazing</span>. The complete <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">Oscar deserving 
+performance</span> of Joaquin, the choreography, the cinematography, the score. 
+Everything is in <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">perfect harmony</span>. While there may have been a lot of controversy 
+surrounding this movie, the team put together <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">a perfect movie</span> and I <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">pity those 
+who can&#x27;t appreciate the tears and sweat and emotion that went into making this 
+movie</span>. 
+
+I have always been so one sided in my movie preferences between Marvel and 
+DC. I feel like Marvel is sooo much better overall and most movies DC puts out 
+are trash. But Joker is <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">far and away my favorite comic movie</span>. Even though it 
+<span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">takes a completely different spin on comic movies</span>. <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">You have to appreciate the 
+evolution to appreciate this movie</span>. <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">It&#x27;s not an action movie</span>, but <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">it&#x27;s really <span class="lx-highlight" data-idx="14" style="background-color:#D2E3FC;">rips and 
+tears at all the emotions in one movie while adding a wild suspenseful kick</span></span>. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">No 
+other comic book movie has done that before</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="15" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/16</span> |
+          Pos <span id="posInfo">[487-503]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "utter perfection", "color": "#C8E6C9", "startPos": 487, "endPos": 503, "beforeText": "is a movie about how Arthur \nFleck becomes the Joker. \n \nI have seen so many bad reviews about how boring or slow the movie is, but I \nbelieve it was ", "extractionText": "utter perfection", "afterText": ". The first part of the movie we begin to understand \nArthur as a person. All of his interactions with everyone in his life, be it good or \nbad. The w", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">utter perfection</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "one of the greatest evolutions of a character I have ever seen in a movie", "color": "#C8E6C9", "startPos": 725, "endPos": 798, "beforeText": ". All of his interactions with everyone in his life, be it good or \nbad. The whole point of a character study is evolution. And this is far and away \n", "extractionText": "one of the greatest evolutions of a character I have ever seen in a movie", "afterText": ". \n \nJoaquin Phoenix&#x27;s performance is by far the best acting I have seen in a movie \npossibly in the last few decades. We see a challenged person be c", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The evolution of Arthur Fleck</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">greatest evolutions of a character</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "by far the best acting I have seen in a movie possibly in the last few decades", "color": "#C8E6C9", "startPos": 836, "endPos": 915, "beforeText": "s evolution. And this is far and away \none of the greatest evolutions of a character I have ever seen in a movie. \n \nJoaquin Phoenix&#x27;s performance is ", "extractionText": "by far the best acting I have seen in a movie \npossibly in the last few decades", "afterText": ". We see a challenged person be challenged by \nsociety and it completely breaks him down over time. And Joaquin isn&#x27;t acting, he \nis evolving all thro", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Joaquin Phoenix&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best acting</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "an Oscar winning performance", "color": "#C8E6C9", "startPos": 1118, "endPos": 1147, "beforeText": "y and it completely breaks him down over time. And Joaquin isn&#x27;t acting, he \nis evolving all throughout the movie. If anyone thinks he doesn&#x27;t put on ", "extractionText": "an Oscar \nwinning performance", "afterText": ", they&#x27;re out of their effing mind. Yes, the movie is slow to \nstart, but it has to be. We couldn&#x27;t just jump into the joker and all the chaos. We \nne", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Joaquin Phoenix&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Oscar winning</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "amazing", "color": "#C8E6C9", "startPos": 1383, "endPos": 1390, "beforeText": ". We couldn&#x27;t just jump into the joker and all the chaos. We \nneed to know where it came from to begin with. \n \nThe whole compilation of the movie is ", "extractionText": "amazing", "afterText": ". The complete Oscar deserving \nperformance of Joaquin, the choreography, the cinematography, the score. \nEverything is in perfect harmony. While ther", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The whole compilation of the movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">amazing</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "Oscar deserving performance", "color": "#C8E6C9", "startPos": 1405, "endPos": 1433, "beforeText": "p into the joker and all the chaos. We \nneed to know where it came from to begin with. \n \nThe whole compilation of the movie is amazing. The complete ", "extractionText": "Oscar deserving \nperformance", "afterText": " of Joaquin, the choreography, the cinematography, the score. \nEverything is in perfect harmony. While there may have been a lot of controversy \nsurro", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Joaquin Phoenix</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Oscar deserving</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "perfect harmony", "color": "#C8E6C9", "startPos": 1513, "endPos": 1528, "beforeText": "ion of the movie is amazing. The complete Oscar deserving \nperformance of Joaquin, the choreography, the cinematography, the score. \nEverything is in ", "extractionText": "perfect harmony", "afterText": ". While there may have been a lot of controversy \nsurrounding this movie, the team put together a perfect movie and I pity those \nwho can&#x27;t appreciate", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The choreography, the cinematography, the score</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">perfect harmony</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "a perfect movie", "color": "#C8E6C9", "startPos": 1624, "endPos": 1639, "beforeText": "tography, the score. \nEverything is in perfect harmony. While there may have been a lot of controversy \nsurrounding this movie, the team put together ", "extractionText": "a perfect movie", "afterText": " and I pity those \nwho can&#x27;t appreciate the tears and sweat and emotion that went into making this \nmovie. \n \nI have always been so one sided in my mo", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The team</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">perfect movie</span>}</div>"}, {"index": 8, "class": "audience_impact", "text": "pity those who can't appreciate the tears and sweat and emotion that went into making this movie", "color": "#D2E3FC", "startPos": 1646, "endPos": 1744, "beforeText": "Everything is in perfect harmony. While there may have been a lot of controversy \nsurrounding this movie, the team put together a perfect movie and I ", "extractionText": "pity those \nwho can&#x27;t appreciate the tears and sweat and emotion that went into making this \nmovie", "afterText": ". \n \nI have always been so one sided in my movie preferences between Marvel and \nDC. I feel like Marvel is sooo much better overall and most movies DC", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">pity, disappointment</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The movie&#x27;s emotional depth and effort</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">those who can&#x27;t appreciate the movie</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "far and away my favorite comic movie", "color": "#C8E6C9", "startPos": 1929, "endPos": 1965, "beforeText": "d in my movie preferences between Marvel and \nDC. I feel like Marvel is sooo much better overall and most movies DC puts out \nare trash. But Joker is ", "extractionText": "far and away my favorite comic movie", "afterText": ". Even though it \ntakes a completely different spin on comic movies. You have to appreciate the \nevolution to appreciate this movie. It&#x27;s not an actio", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Joker</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">favorite comic movie</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "takes a completely different spin on comic movies", "color": "#C8E6C9", "startPos": 1983, "endPos": 2032, "beforeText": "el like Marvel is sooo much better overall and most movies DC puts out \nare trash. But Joker is far and away my favorite comic movie. Even though it \n", "extractionText": "takes a completely different spin on comic movies", "afterText": ". You have to appreciate the \nevolution to appreciate this movie. It&#x27;s not an action movie, but it&#x27;s really rips and \ntears at all the emotions in one", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">completely different spin</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "You have to appreciate the evolution to appreciate this movie", "color": "#C8E6C9", "startPos": 2034, "endPos": 2096, "beforeText": " movies DC puts out \nare trash. But Joker is far and away my favorite comic movie. Even though it \ntakes a completely different spin on comic movies. ", "extractionText": "You have to appreciate the \nevolution to appreciate this movie", "afterText": ". It&#x27;s not an action movie, but it&#x27;s really rips and \ntears at all the emotions in one movie while adding a wild suspenseful kick. No \nother comic boo", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie&#x27;s evolution</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">appreciate the evolution</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "It's not an action movie", "color": "#C8E6C9", "startPos": 2098, "endPos": 2122, "beforeText": "orite comic movie. Even though it \ntakes a completely different spin on comic movies. You have to appreciate the \nevolution to appreciate this movie. ", "extractionText": "It&#x27;s not an action movie", "afterText": ", but it&#x27;s really rips and \ntears at all the emotions in one movie while adding a wild suspenseful kick. No \nother comic book movie has done that befo", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">not an action movie</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "it's really rips and tears at all the emotions in one movie while adding a wild suspenseful kick", "color": "#C8E6C9", "startPos": 2128, "endPos": 2225, "beforeText": " it \ntakes a completely different spin on comic movies. You have to appreciate the \nevolution to appreciate this movie. It&#x27;s not an action movie, but ", "extractionText": "it&#x27;s really rips and \ntears at all the emotions in one movie while adding a wild suspenseful kick", "afterText": ". No \nother comic book movie has done that before.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">rips and tears at all the emotions...wild suspenseful kick</span>}</div>"}, {"index": 14, "class": "audience_impact", "text": "rips and tears at all the emotions in one movie while adding a wild suspenseful kick", "color": "#D2E3FC", "startPos": 2140, "endPos": 2225, "beforeText": " completely different spin on comic movies. You have to appreciate the \nevolution to appreciate this movie. It&#x27;s not an action movie, but it&#x27;s really ", "extractionText": "rips and \ntears at all the emotions in one movie while adding a wild suspenseful kick", "afterText": ". No \nother comic book movie has done that before.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">emotional, suspenseful</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "No other comic book movie has done that before", "color": "#C8E6C9", "startPos": 2227, "endPos": 2274, "beforeText": "preciate this movie. It&#x27;s not an action movie, but it&#x27;s really rips and \ntears at all the emotions in one movie while adding a wild suspenseful kick. ", "extractionText": "No \nother comic book movie has done that before", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie&#x27;s uniqueness</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">No other comic book movie has done that before</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
